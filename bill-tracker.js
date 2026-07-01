@@ -1,4 +1,6 @@
+// DO NOT CHANGE
 const apiKey = "pFG7FfWnbMs5H9HdZQWDYmVG8utnxSDx";
+// Change based on what year it is
 const year = "2026";
 
 /* ============================================================
@@ -28,8 +30,12 @@ function checkGovernorMilestones(milestones) {
 
     return { delivered, signed , veto};
 }
-
 async function getBillData(billId) {
+    // Lock in which chamber we were ASKED about, before substitution can
+    // overwrite `bill` with the other chamber's data.
+    const requestedChamber = billId.trim().toUpperCase().startsWith("A") ? "ASSEMBLY" : "SENATE";
+    const requestedChamberLabel = requestedChamber === "SENATE" ? "Senate" : "Assembly";
+
     const url = `https://legislation.nysenate.gov/api/3/bills/${year}/${billId}?key=${apiKey}`;
     const raw = await fetch(url).then(r => r.json());
     let bill = raw.result;
@@ -46,7 +52,7 @@ async function getBillData(billId) {
 
     // Sponsor name
     const sponsorName = bill?.sponsor?.member?.shortName ?? null;
-	const fullSponsor = bill?.sponsor?.member?.fullName ?? null;
+    const fullSponsor = bill?.sponsor?.member?.fullName ?? null;
     const summary = bill.summary;
 
     // Bill link
@@ -59,24 +65,18 @@ async function getBillData(billId) {
     const coList = latestAmendment?.coSponsors?.items || [];
     const cosponsors = coList.length ? coList.map(c => c.fullName).join(", ") : null;
 
-    // If substituted, load the substitute bill instead
+     // If substituted, load the substitute bill instead
     if (bill.substitutedBy) {
         const newUrl = `https://legislation.nysenate.gov/api/3/bills/${year}/${bill.substitutedBy.basePrintNo}?key=${apiKey}`;
         const newRaw = await fetch(newUrl).then(r => r.json());
         bill = newRaw.result;
     }
 
-    // PASSED logic
+    // Status is derived purely from this chamber's own milestone history —
+    // never from bill.status, which after a substitution reflects whatever
+    // the substitute's most recent action was, regardless of chamber.
     const milestones = bill?.milestones?.items || [];
-    const passed = milestones.filter(m => m.statusType?.includes("PASSED"));
-    const passedStatus = passed.length ? `Passed ${bill.billType.desc}` : null;
-
-    // Friendly status
-    const status =
-        passedStatus ??
-        (bill.status.statusType?.includes("COMM") && bill.status.committeeName
-            ? `In ${bill.status.committeeName} Committee`
-            : bill.status.statusDesc);
+    const status = getChamberProgressLabel(milestones, requestedChamber);
 
     // Last action
     const actions = bill?.actions?.items || [];
@@ -84,10 +84,10 @@ async function getBillData(billId) {
     const lastActionCombined = lastAction
         ? `${lastAction.text} (${formatDate(lastAction.date)})`
         : null;
-	
-	// Gov status
-	const govStatus = checkGovernorMilestones(bill.milestones.items);
-	
+
+    // Gov status
+    const govStatus = checkGovernorMilestones(bill.milestones.items);
+
     return {
         Sponsor: fullSponsor,
         LatestPrintNo: latestPrintNo,
@@ -98,13 +98,15 @@ async function getBillData(billId) {
         Status: status,
         LastAction: lastActionCombined,
         Link: webLink,
-		GovStatus: govStatus
+        GovStatus: govStatus
     };
 }
 
 /* ============================================================
    BILL TRACKER — MAIN FETCH LOOP
 ============================================================ */
+
+// WHERE TO CHANGE WHICH BILLS ON THE WEBSITE, ensure you have commas after "senate" "assembly" and every bracket
 async function fetchBillData(callback) {
     const billsToTrack = [
 		{ senate: "S9589", assembly: "A10926",  name: "Protecting Health Coverage" },
@@ -175,6 +177,26 @@ const colors = {
 
 function formatPercent(value) {
     return typeof value === "number" ? Math.round(value * 100) + "%" : (value || "");
+}
+
+// Ensures the milestone is displaying correctly
+
+function getChamberProgressLabel(milestones, chamber) {
+    const chamberLabel = chamber === "SENATE" ? "Senate" : "Assembly";
+
+    // Ordered from most advanced to least advanced.
+    // The FIRST one found wins — later/other milestones are ignored once
+    // a higher stage has been reached, so a chamber can never "un-pass".
+    const passed = milestones.find(m => m.statusType === `PASSED_${chamber}`);
+    if (passed) return `Passed ${chamberLabel}`;
+
+    const onFloor = milestones.find(m => m.statusType === `${chamber}_FLOOR`);
+    if (onFloor) return `${chamberLabel} Floor Calendar`;
+
+    const inComm = milestones.find(m => m.statusType === `IN_${chamber}_COMM`);
+    if (inComm) return inComm.committeeName ? `In ${inComm.committeeName} Committee` : "In Committee";
+
+    return "Introduced";
 }
 
 /* ============================================================
@@ -596,3 +618,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
