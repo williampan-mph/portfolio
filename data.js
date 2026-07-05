@@ -62,8 +62,8 @@ const ENTRIES = [
     summary:
       "Developed a Legislative Tracker, using JS code and Open Legislation v2.0 API data, to help the team and other stakeholders track bills and policies.",
     tags: ["Data visualization", "Website"],
-    file: "",
-    url: "https://hcfany.org/bill-tracker/",
+    file: "bill-tracker.js",
+    url: "",
   },
   {
     id: "2026-02",
