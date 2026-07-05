@@ -85,7 +85,7 @@ const ENTRIES = [
     date: "2026-05",
     summary:
       "Updating consumers, who receives coverages on the Marketplace, on how cost-sharing reductions are changing due to the State's Transition back to the Basic Health Plan.",
-    tags: ["New York Marketplace Changes", "Published"],
+    tags: ["Published"],
     file: "",
     url: "https://hcfany.org/free-insulin-program-in-new-york-remains-amidst-state-transition-back-to-the-basic-health-plan/",
   },
