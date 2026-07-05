@@ -74,8 +74,8 @@ const ENTRIES = [
     summary:
       "Two-page leave-behind for state legislators summarizing the case for extending postpartum Medicaid coverage to 12 months, with district-level impact data.",
     tags: ["Fact sheet", "State legislature"],
-    file: "assets/onepagers/postpartum-coverage-onepager.pdf",
-    url: "",
+    file: "",
+    url: "https://hcfany.org/resources/the-impact-of-federal-threats-to-new-yorks-health-care-system-by-district/",
   },
   {
     id: "2026-03",
