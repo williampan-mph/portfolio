@@ -60,10 +60,10 @@ const ENTRIES = [
     type: "dashboard",
     date: "2026-03",
     summary:
-      "Interactive dashboard tracking enrollment and coverage gaps across non-expansion states, built to brief legislative staff ahead of committee hearings.",
-    tags: ["Data visualization", "Legislative briefing"],
-    file: "assets/dashboards/medicaid-tracker.html",
-    url: "",
+      "Developed a Legislative Tracker, using JS code and Open Legislation v2.0 API data, to help the team and other stakeholders track bills and policies.",
+    tags: ["Data visualization", "Website"],
+    file: "",
+    url: "https://hcfany.org/bill-tracker/",
   },
   {
     id: "2026-02",
