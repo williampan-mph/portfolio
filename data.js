@@ -72,7 +72,7 @@ const ENTRIES = [
     type: "link",
     date: "2026-06",
     summary:
-      "Two-page leave-behind for state legislators summarizing the case for extending postpartum Medicaid coverage to 12 months, with district-level impact data.",
+      "Analyzed how New York's Fiscal Year 2026-27 Budget has changed since the Governor's Executive Budget and its implicaiton for New York conusmers on access to health care and coverage.",
     tags: ["State legislature", "Published"],
     file: "",
     url: "https://hcfany.org/hcfany-on-new-yorks-fy2026-2027-final-budget/",
