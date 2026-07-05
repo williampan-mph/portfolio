@@ -1,26 +1,64 @@
-<div id="bill-tracker-container"></div>
-<script src="bill-tracker.js" defer=""></script>
-<style>
-.bill-tracker-container {
-    margin-left: 0px !important;
-		margin-right: 0px !important;
-    padding: 0 !important;
-    max-width: 100% !important;
-		width: 100% !important;
-    box-sizing: border-box;
-}
-.custom-SbillName {
-  color: #e76f51;
-  text-decoration: none;
-  font-size: 24px;
-	margin-bottom: 0px;
-  display: inline-block;
-}
-.custom-AbillName {
-  color: #58355e;
-  text-decoration: none;
-  font-size: 24px;
-  margin-bottom: 0px;
-  display: inline-block;
-}
-</style>
+
+Index · HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>William Pan — Health Policy Analyst & Advocacy Portfolio</title>
+<meta name="description" content="Portfolio of health policy analysis and advocacy work, organized by campaign: data dashboards, legislative one-pagers, social toolkits, and published explainers." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ 
+<header class="site-header">
+  <div class="wrap">
+    <div class="masthead">
+      <div>
+        <h1 class="name">Jordan Ellis</h1>
+        <p class="role-line">
+          Health policy analyst focused on Medicaid, maternal health, and harm
+          reduction policy. This is a working record of research, advocacy
+          materials, and public communications from recent campaigns.
+        </p>
+        <div class="contact-row">
+          <a href="mailto:jordan@example.com">jordan@example.com</a>
+          <a href="https://linkedin.com/in/example" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume (PDF)</a>
+        </div>
+      </div>
+      <div class="masthead-id">Portfolio&nbsp;No. 2026&#8209;01</div>
+    </div>
+  </div>
+</header>
+ 
+<div class="filter-bar">
+  <div class="wrap filter-row">
+    <div>
+      <p class="filter-label">Filter by campaign</p>
+      <div class="filter-chips" id="campaign-chips"></div>
+    </div>
+    <div>
+      <p class="filter-label">Filter by material type</p>
+      <div class="filter-chips" id="type-chips"></div>
+    </div>
+  </div>
+</div>
+ 
+<main class="docket">
+  <div class="wrap">
+    <p class="count-line" id="count-line"></p>
+    <div id="docket-list"></div>
+  </div>
+</main>
+ 
+<footer class="site-footer">
+  <div class="wrap">
+    Built as a static site — updated by editing <code>data.js</code>. Last record added per the entries above.
+  </div>
+</footer>
+ 
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
