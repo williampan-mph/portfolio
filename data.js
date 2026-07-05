@@ -47,7 +47,7 @@
 
 const CAMPAIGNS = [
   { id: "nys-legislature", label: "New York Legislation" },
-  { id: "maternal-health", label: "Maternal Health Access" },
+  { id: "nys-marketplace", label: "New York State of Health Marketplace" },
   { id: "opioid-response", label: "Opioid Response & Harm Reduction" },
   { id: "telehealth-equity", label: "Telehealth Equity" },
 ];
@@ -79,15 +79,15 @@ const ENTRIES = [
   },
   {
     id: "2026-03",
-    title: "#CoverThe12Months Social Toolkit",
-    campaign: "maternal-health",
-    type: "toolkit",
-    date: "2026-02",
+    title: "Marketplace Changes due to the State's Return to the Basic Health Plan",
+    campaign: "nys-marketplace",
+    type: "link",
+    date: "2026-05",
     summary:
-      "Coalition social media toolkit with graphics, sample copy, and a posting calendar distributed to 14 partner organizations for a coordinated advocacy push.",
-    tags: ["Coalition coordination", "Social strategy"],
-    file: "assets/toolkits/cover-the-12-months-toolkit.zip",
-    url: "",
+      "Updating consumers, who receives coverages on the Marketplace, on how cost-sharing reductions are changing due to the State's Transition back to the Basic Health Plan.",
+    tags: ["New York Marketplace Changes", "Published"],
+    file: "",
+    url: "https://hcfany.org/free-insulin-program-in-new-york-remains-amidst-state-transition-back-to-the-basic-health-plan/",
   },
   {
     id: "2026-04",
