@@ -46,7 +46,7 @@
 */
 
 const CAMPAIGNS = [
-  { id: "medicaid-expansion", label: "Medicaid Expansion" },
+  { id: "nys-legislature", label: "New York Legislation" },
   { id: "maternal-health", label: "Maternal Health Access" },
   { id: "opioid-response", label: "Opioid Response & Harm Reduction" },
   { id: "telehealth-equity", label: "Telehealth Equity" },
@@ -55,27 +55,27 @@ const CAMPAIGNS = [
 const ENTRIES = [
   {
     id: "2026-01",
-    title: "State Medicaid Expansion Tracker",
-    campaign: "medicaid-expansion",
+    title: "New York State Bill Tracker",
+    campaign: "nys-legislature",
     type: "dashboard",
     date: "2026-03",
     summary:
-      "Developed a Legislative Tracker, using JS code and Open Legislation v2.0 API data, to help the team and other stakeholders track bills and policies.",
-    tags: ["Data visualization", "Website"],
+      "Developed a State Legislation Tracker, using JS code and Open Legislation v2.0 API data, to help the team and other stakeholders track bills and policies.",
+    tags: ["Data visualization", "Website" "State legislature"],
     file: "bill-tracker.js",
     url: "https://hcfany.org/bill-tracker/",
   },
   {
     id: "2026-02",
-    title: "Postpartum Coverage Extension — One-Pager",
-    campaign: "maternal-health",
-    type: "onepager",
-    date: "2026-02",
+    title: "Analysis of New York's Fiscal 2026-2027 Budget",
+    campaign: "nys-legislature",
+    type: "link",
+    date: "2026-06",
     summary:
       "Two-page leave-behind for state legislators summarizing the case for extending postpartum Medicaid coverage to 12 months, with district-level impact data.",
-    tags: ["Fact sheet", "State legislature"],
+    tags: ["State legislature", "Published"],
     file: "",
-    url: "https://hcfany.org/resources/the-impact-of-federal-threats-to-new-yorks-health-care-system-by-district/",
+    url: "https://hcfany.org/hcfany-on-new-yorks-fy2026-2027-final-budget/",
   },
   {
     id: "2026-03",
