@@ -61,7 +61,7 @@ const ENTRIES = [
     date: "2026-03",
     summary:
       "Developed a State Legislation Tracker, using JS code and Open Legislation v2.0 API data, to help the team and other stakeholders track bills and policies.",
-    tags: ["Data visualization", "Website" "State legislature"],
+    tags: ["Data visualization", "Website", "State legislature"],
     file: "bill-tracker.js",
     url: "https://hcfany.org/bill-tracker/",
   },
