@@ -60,8 +60,8 @@ const ENTRIES = [
     type: "dashboard",
     date: "2026-03",
     summary:
-      "Developed a State Legislation Tracker, using JS code and Open Legislation v2.0 API data, to help the team and other stakeholders track bills and policies.",
-    tags: ["Data visualization", "Website", "State legislature"],
+      "Developed a State Legislation Tracker, using JS code and Open Legislation v2.0 API data, to help the team and other stakeholders track bills and policies on our agenda.",
+    tags: ["Data visualization", "State legislature"],
     file: "bill-tracker.js",
     url: "https://hcfany.org/bill-tracker/",
   },
@@ -91,7 +91,7 @@ const ENTRIES = [
   },
   {
     id: "2026-04",
-    title: "Legislative and Consumer Facing One-Pager Describing the Impacts of HR1 on New Yorkers and the State Budget",
+    title: "Legislative and Consumer One-Pagers Describing the Impacts of HR1 on New Yorkers and the State Budget",
     campaign: "aca-changes",
     type: "one-pager",
     date: "2025-01",
