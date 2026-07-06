@@ -48,7 +48,7 @@
 const CAMPAIGNS = [
   { id: "nys-legislature", label: "New York Legislation" },
   { id: "nys-marketplace", label: "New York State of Health Marketplace" },
-  { id: "opioid-response", label: "Opioid Response & Harm Reduction" },
+  { id: "aca-changes", label: "Federal Changes to the Affordable Care Act" },
   { id: "telehealth-equity", label: "Telehealth Equity" },
 ];
 
@@ -91,14 +91,14 @@ const ENTRIES = [
   },
   {
     id: "2026-04",
-    title: "Harm Reduction Funding Explainer",
-    campaign: "opioid-response",
-    type: "link",
-    date: "2026-01",
+    title: "Legislative and Consumer Facing One-Pager Describing the Impacts of HR1 on New Yorkers and the State Budget",
+    campaign: "aca-changes",
+    type: "one-pager",
+    date: "2025-01",
     summary:
-      "Public-facing explainer published on our organization's site breaking down state opioid settlement fund allocation and how residents can advocate for local spending priorities.",
+      "Developed One-pagers for consumers and policymakers on how federal cuts to the Affordable Care Act would affect New York and its Budget.",
     tags: ["Public education", "Published"],
     file: "",
-    url: "https://example.org/harm-reduction-funding-explainer",
+    url: "https://hcfany.org/resources/the-impact-of-federal-threats-to-new-yorks-health-care-system-by-district/",
   },
 ];
