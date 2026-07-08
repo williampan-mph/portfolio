@@ -101,4 +101,16 @@ const ENTRIES = [
     file: "",
     url: "https://hcfany.org/resources/the-impact-of-federal-threats-to-new-yorks-health-care-system-by-district/",
   },
+  {
+    id: "2026-05",
+    title: "Dashboard on how federal changes to the Affordable Care Act will impact New Yorkerst",
+    campaign: "aca-changes",
+    type: "dashboard",
+    date: "2025-01",
+    summary:
+      "Developed a data dashboard, using external data, to inform policymakers and consumers on how federal cuts to the ACA affects New Yorkers by County and Congressional District.",
+    tags: ["Dashboard", "Published"],
+    file: "",
+    url: "https://hcfany.org/federal-threats-to-health-coverage/",
+  },
 ];
