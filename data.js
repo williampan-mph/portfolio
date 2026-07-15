@@ -110,7 +110,7 @@ const ENTRIES = [
     summary:
       "Developed a data dashboard, using external data, to inform policymakers and consumers on how federal cuts to the ACA affects New Yorkers by County and Congressional District.",
     tags: ["Dashboard", "Published"],
-    file: "",
+    file: "index-ft.js",
     url: "https://hcfany.org/federal-threats-to-health-coverage/",
   },
 ];
