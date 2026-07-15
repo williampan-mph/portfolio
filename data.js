@@ -62,7 +62,7 @@ const ENTRIES = [
     summary:
       "Developed a State Legislation Tracker, using JS code and Open Legislation v2.0 API data, to help the team and other stakeholders track bills and policies on our agenda.",
     tags: ["Data visualization", "State legislature"],
-    file: "bt-index.html",
+    file: "dashboard/bt-index.html",
     url: "https://hcfany.org/bill-tracker/",
   },
   {
@@ -110,7 +110,7 @@ const ENTRIES = [
     summary:
       "Developed a data dashboard, using external data, to inform policymakers and consumers on how federal cuts to the ACA affects New Yorkers by County and Congressional District.",
     tags: ["Dashboard", "Published"],
-    file: "ft-index.html",
+    file: "dashboard/ft-index.html",
     url: "https://hcfany.org/federal-threats-to-health-coverage/",
   },
   {
@@ -122,7 +122,7 @@ const ENTRIES = [
     summary:
       "Developed a State Legislation Tracker, using JS code and Open Legislation v2.0 API data, to help the team and other stakeholders track bills and policies on our agenda.",
     tags: ["Data visualization", "State legislature"],
-    file: "rr-index.html",
+    file: "dashboard/rr-index.html",
     url: "https://hcfany.org/rate-review/",
   },
 ];
