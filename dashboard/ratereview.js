@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // ─── ADD YOUR CSV URLs HERE ───────────────────────────────────────────────
   // Each entry: { label: "Dropdown display name", url: "https://..." }
   const csvSources = [
- { label: "Premiums" , url: "https://hcfany.org/wp-content/uploads/2026/07/premiums.csv", format: "currency"},
- { label: "Rates",   url: "https://hcfany.org/wp-content/uploads/2026/07/ratereview.csv", format: "percentage" }
+ { label: "Premiums" , url: "dashboard/premiums.csv", format: "currency"},
+ { label: "Rates",   url: "dashboard/ratereview.csv", format: "percentage" }
     // { label: "Loss Ratio",    url: "https://hcfany.org/wp-content/uploads/2025/12/lossratio.csv" },
     // { label: "Market Share",  url: "https://hcfany.org/wp-content/uploads/2025/12/marketshare.csv" },
     // Add more here as needed
