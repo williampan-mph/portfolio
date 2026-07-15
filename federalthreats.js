@@ -1,13 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
   /* ============================================================
-     EXIT IF NOT CORRECT PAGE
-  ============================================================ */
-  if (!window.location.pathname.includes("/federal-threats-to-health-coverage/")) {
-    return;
-  }
-
-  /* ============================================================
      SHARED STYLES
   ============================================================ */
   const defaultStyle = {
