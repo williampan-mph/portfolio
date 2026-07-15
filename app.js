@@ -6,7 +6,7 @@
 const TYPE_LABELS = {
   dashboard: "Dashboard",
   toolkit: "Toolkit",
-  link: "Website",
+  link: "Policy Writing",
   onepager: "One-pager",
 };
 
