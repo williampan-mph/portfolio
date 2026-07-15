@@ -78,6 +78,18 @@ const ENTRIES = [
     url: "https://hcfany.org/hcfany-on-new-yorks-fy2026-2027-final-budget/",
   },
   {
+    id: "7",
+    title: "Rate-Review",
+    campaign: "nys-legislature",
+    type: "dashboard",
+    date: "2026-03",
+    summary:
+      "Developed a State Legislation Tracker, using JS code and Open Legislation v2.0 API data, to help the team and other stakeholders track bills and policies on our agenda.",
+    tags: ["Data visualization", "State legislature"],
+    file: "rr-index.html",
+    url: "https://hcfany.org/rate-review/",
+  },
+  {
     id: "2026-03",
     title: "Marketplace Changes due to the State's Return to the Basic Health Plan",
     campaign: "nys-marketplace",
