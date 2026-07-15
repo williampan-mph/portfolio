@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const districtLookup1 = {};
   const districtFeatures1 = {};
 
-  const sheetUrl1 = "dashboard/NY-Federal-Threats-to-Health-Care.csv";
+  const sheetUrl1 = "NY-Federal-Threats-to-Health-Care.csv";
   const geoJsonUrl1 = "https://raw.githubusercontent.com/HCFANY/ny-congressional-districts/ac573ceb2a46b4268404b06cc0c3313da807ddef/NYS_Congressional_Districts_1248143431698889131.geojson";
 
 
@@ -297,7 +297,7 @@ document.querySelectorAll(".dashboard-tab-btn").forEach(btn => {
   const countyLookup2 = {};
   const countyFeatures2 = {};
 
-  const sheetUrl2 = "dashboard/cms-guidelines.csv";
+  const sheetUrl2 = "cms-guidelines.csv";
   const geoJsonUrl2 = "https://raw.githubusercontent.com/HCFANY/ny-counties/main/NYS_Civil_Boundaries_2455759864913236436%20(1).geojson";
 
 
