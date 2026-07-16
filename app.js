@@ -62,6 +62,14 @@ function fileName(path) {
 
 function getEntryFiles(entry) {
   if (entry.files && entry.files.length) return entry.files;
+  if (Array.isArray(entry.file)) {
+    // Common mistake: multiple files were put under "file" instead of
+    // "files". Recover gracefully instead of crashing the whole list.
+    console.warn(
+      `Portfolio: entry "${entry.id || entry.title}" has multiple files under "file" — this should be renamed to "files". Rendering it anyway.`
+    );
+    return entry.file;
+  }
   if (entry.file) return [{ path: entry.file, label: fileName(entry.file) }];
   return [];
 }
@@ -133,7 +141,17 @@ function renderEntries() {
     return;
   }
 
-  list.replaceChildren(...entries.map(renderEntry));
+  const cards = [];
+  entries.forEach((entry) => {
+    try {
+      cards.push(renderEntry(entry));
+    } catch (err) {
+      // Don't let one malformed entry in data.js take down the whole page —
+      // skip it and leave a note in the console so it's easy to spot.
+      console.error(`Portfolio: entry "${entry.id || "(no id)"}" failed to render and was skipped.`, err);
+    }
+  });
+  list.replaceChildren(...cards);
 }
 
 // ---------- Type-specific preview/action renderers ----------
