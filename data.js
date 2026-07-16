@@ -146,7 +146,7 @@ const ENTRIES = [
     summary:
       "Developed a State Legislation Tracker, using JS code and Open Legislation v2.0 API data, to help the team and other stakeholders track bills and policies on our agenda.",
     tags: ["Data visualization", "State legislature"],
-    file: [{ path: "pdfs/Healthcare Affordability Trifold FINAL.pdf", label: "Fig. 1 — Enrollment trend" },
+    files: [{ path: "pdfs/Healthcare Affordability Trifold FINAL.pdf", label: "Fig. 1 — Enrollment trend" },
     { path: "pdfs/NYC Regional Brief FINAL.pdf", label: "Fig. 2 — Coverage by state" },
            { path: "pdfs/Statewide Regional Brief FINAL.pdf", label: "Fig. 2 — Coverage by state" },],
     url: "",
