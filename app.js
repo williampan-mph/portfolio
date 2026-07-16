@@ -4,11 +4,11 @@
 // ============================================================
  
 const TYPE_LABELS = {
-  dashboard: "Dashboard",
-  toolkit: "Toolkit",
-  graph: "Graph/Figure",
-  onepager: "One-pager",
-  link: "Website",
+  dashboard: "Dashboards",
+  toolkit: "Toolkits",
+  graph: "Graphs/Figures",
+  onepager: "Policy Briefs",
+  link: "Policy Writing",
 };
  
 const TYPE_ICONS = {
