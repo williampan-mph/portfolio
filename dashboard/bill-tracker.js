@@ -226,8 +226,8 @@ function createProgressBar(progressText, type) {
     const progressContainer = document.createElement("div");
     progressContainer.style.cssText = `
 		display: flex;
-		width: calc(100% + 36px);
-        margin-left: -14px;
+		width: calc(100%);
+        margin-left: -10px;
 		position: relative;
 		box-sizing: border-box;
 	`;
@@ -339,8 +339,8 @@ function createBillSection(bill) {
     const section = document.createElement("div");
     section.className = "bill-section";
     section.style.cssText = `
-    margin: 20px 0;
-	padding: 24px 28px;
+    margin: 10px 0;
+	padding: 24px 24px;
     border-radius: 12px;
     background-color: #ffffff;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
@@ -353,14 +353,13 @@ function createBillSection(bill) {
         text-transform: uppercase;
         font-size: 32px;
         color: #002d62;
-        margin-bottom: 10px;
+        margin-bottom: 5x;
     `;
 
     const senateProgress = createProgressBar(bill.senateProgress, "senate");
     const assemblyProgress = createProgressBar(bill.assemblyProgress, "assembly");
 
     const billInfo = document.createElement("div");
-    billInfo.style.marginBottom = "5px";
 
 	const summaryHTML = bill.billSummary ? bill.billSummary + "<br>" : "";
     const noteHTML = bill.note? `<div style="background-color: #fff8e1; border-left: 4px solid #f0a500; padding: 10px 14px; margin-top: 8px; font-size: 14px; border-radius: 4px; color: #5a4000;">
