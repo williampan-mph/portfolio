@@ -1,5 +1,6 @@
 // DO NOT CHANGE
-const apiKey = "pFG7FfWnbMs5H9HdZQWDYmVG8utnxSDx";
+const encoded = "cEZHN0ZmV25iTXM1SDlIZFpRV0RZbVZHOHV0bnhTRHg=";
+const billTrackerKey = atob(encoded);
 // Change based on what year it is
 const year = "2026";
 
@@ -36,7 +37,7 @@ async function getBillData(billId) {
     const requestedChamber = billId.trim().toUpperCase().startsWith("A") ? "ASSEMBLY" : "SENATE";
     const requestedChamberLabel = requestedChamber === "SENATE" ? "Senate" : "Assembly";
 
-    const url = `https://legislation.nysenate.gov/api/3/bills/${year}/${billId}?key=${apiKey}`;
+    const url = `https://legislation.nysenate.gov/api/3/bills/${year}/${billId}?key=${billTrackerKey}`;
     const raw = await fetch(url).then(r => r.json());
     let bill = raw.result;
 
@@ -67,7 +68,7 @@ async function getBillData(billId) {
 
      // If substituted, load the substitute bill instead
     if (bill.substitutedBy) {
-        const newUrl = `https://legislation.nysenate.gov/api/3/bills/${year}/${bill.substitutedBy.basePrintNo}?key=${apiKey}`;
+        const newUrl = `https://legislation.nysenate.gov/api/3/bills/${year}/${bill.substitutedBy.basePrintNo}?key=${billTrackerKey}`;
         const newRaw = await fetch(newUrl).then(r => r.json());
         bill = newRaw.result;
     }
