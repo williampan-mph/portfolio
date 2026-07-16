@@ -146,31 +146,7 @@ const ENTRIES = [
     summary:
       "Developed a State Legislation Tracker, using JS code and Open Legislation v2.0 API data, to help the team and other stakeholders track bills and policies on our agenda.",
     tags: ["Data visualization", "State legislature"],
-    file: "pdfs/Healthcare Affordability Trifold FINAL.pdf",
-    url: "",
-  },
-  {
-    id: "2026-08",
-    title: "Healthcare Affordability NYC Brief",
-    campaign: "hc-affordability",
-    type: "onepager",
-    date: "2026-03",
-    summary:
-      "Developed a State Legislation Tracker, using JS code and Open Legislation v2.0 API data, to help the team and other stakeholders track bills and policies on our agenda.",
-    tags: ["Data visualization", "State legislature"],
-    file: "pdfs/NYC Regional Brief FINAL.pdf",
-    url: "",
-  },
-  {
-  id: "2026-09",
-    title: "Healthcare Affordability Statewide Brief",
-    campaign: "hc-affordability",
-    type: "onepager",
-    date: "2026-03",
-    summary:
-      "Developed a State Legislation Tracker, using JS code and Open Legislation v2.0 API data, to help the team and other stakeholders track bills and policies on our agenda.",
-    tags: ["Data visualization", "State legislature"],
-    file: "pdfs/Statewide Regional Brief FINAL.pdf",
+    file: ["pdfs/Healthcare Affordability Trifold FINAL.pdf", "pdfs/NYC Regional Brief FINAL.pdf", "pdfs/Statewide Regional Brief FINAL.pdf"],
     url: "",
   },
 ];
