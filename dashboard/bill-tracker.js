@@ -227,6 +227,7 @@ function createProgressBar(progressText, type) {
     progressContainer.style.cssText = `
 		display: flex;
 		width: calc(100% + 36px);
+        margin-left: -14px;
 		position: relative;
 		box-sizing: border-box;
 	`;
@@ -248,7 +249,7 @@ function createProgressBar(progressText, type) {
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 17px;
+            font-size: 14px;
 			line-height: 1;
             font-weight: bold;
             color: #fff;
@@ -352,7 +353,7 @@ function createBillSection(bill) {
         text-transform: uppercase;
         font-size: 32px;
         color: #002d62;
-        margin-bottom: 0;
+        margin-bottom: 10px;
     `;
 
     const senateProgress = createProgressBar(bill.senateProgress, "senate");
@@ -482,6 +483,7 @@ function createBillSection(bill) {
     senateLabel.style.cssText = `
         color: ${colors.orange};
         font-weight: bold;
+        font-size: 24px;
         margin-bottom: 0;
     `;
     senateLabel.innerHTML = bill.senateBill
@@ -493,6 +495,7 @@ function createBillSection(bill) {
     assemblyLabel.style.cssText = `
         color: ${colors.purple};
         font-weight: bold;
+        font-size: 24px;
         margin-bottom: 0;
     `;
     assemblyLabel.innerHTML = bill.assemblyBill
