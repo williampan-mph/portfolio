@@ -98,7 +98,7 @@ const ENTRIES = [
     summary:
       "Developed One-pagers for consumers and policymakers on how federal cuts to the Affordable Care Act would affect New York and its Budget.",
     tags: ["Public education", "Published"],
-    file: "",
+    files: [""],
     url: "https://hcfany.org/resources/the-impact-of-federal-threats-to-new-yorks-health-care-system-by-district/",
   },
   {
