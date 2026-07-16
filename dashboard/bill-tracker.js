@@ -226,7 +226,7 @@ function createProgressBar(progressText, type) {
     const progressContainer = document.createElement("div");
     progressContainer.style.cssText = `
 		display: flex;
-		width: calc(100%);
+		width: calc(100% + 24px);
         margin-left: -10px;
 		position: relative;
 		box-sizing: border-box;
@@ -249,7 +249,7 @@ function createProgressBar(progressText, type) {
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 14px;
+            font-size: 16px;
 			line-height: 1;
             font-weight: bold;
             color: #fff;
@@ -339,7 +339,6 @@ function createBillSection(bill) {
     const section = document.createElement("div");
     section.className = "bill-section";
     section.style.cssText = `
-    margin: 10px 0;
 	padding: 24px 24px;
     border-radius: 12px;
     background-color: #ffffff;
@@ -349,11 +348,11 @@ function createBillSection(bill) {
     const name = document.createElement("h2");
     name.textContent = bill.name;
     name.style.cssText = `
-        font-weight: 900;
+        margin-top: -10px;
+		font-weight: 900;
         text-transform: uppercase;
         font-size: 32px;
         color: #002d62;
-        margin-bottom: 5x;
     `;
 
     const senateProgress = createProgressBar(bill.senateProgress, "senate");
