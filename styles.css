@@ -75,7 +75,7 @@ h1.name {
   font-size: 17px;
   color: var(--ink-soft);
   margin: 0 0 18px;
-  max-width: 60ch;
+  max-width: 80ch;
 }
  
 .contact-row {
@@ -228,7 +228,7 @@ h1.name {
 .entry-summary {
   color: var(--ink-soft);
   margin: 0 0 14px;
-  max-width: 68ch;
+  max-width: 84ch;
 }
  
 .entry-tags {
