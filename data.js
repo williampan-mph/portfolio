@@ -49,7 +49,7 @@ const CAMPAIGNS = [
   { id: "nys-legislature", label: "New York Legislation" },
   { id: "nys-marketplace", label: "New York State of Health Marketplace" },
   { id: "aca-changes", label: "Federal Changes to the Affordable Care Act" },
-  { id: "telehealth-equity", label: "Telehealth Equity" },
+  { id: "hc-affordability", label: "Healthcare Affordability" },
 ];
 
 const ENTRIES = [
@@ -127,8 +127,8 @@ const ENTRIES = [
   },
   {
     id: "2026-07",
-    title: "Healthcare Affordability",
-    campaign: "nys-legislature",
+    title: "Healthcare Affordability Dashboard",
+    campaign: "hc-affordability",
     type: "dashboard",
     date: "2026-03",
     summary:
@@ -136,5 +136,29 @@ const ENTRIES = [
     tags: ["Data visualization", "State legislature"],
     file: "dashboard/hc-index.html",
     url: "https://wethepatientsny.org/health-care-affordability/",
+  },
+   {
+    id: "2026-08",
+    title: "Healthcare Affordability Trifold",
+    campaign: "hc-affordability",
+    type: "one-pager",
+    date: "2026-03",
+    summary:
+      "Developed a State Legislation Tracker, using JS code and Open Legislation v2.0 API data, to help the team and other stakeholders track bills and policies on our agenda.",
+    tags: ["Data visualization", "State legislature"],
+    file: "pdfs/Healthcare Affordability Trifold FINAL.pdf",
+    url: "",
+  },
+  {
+    id: "2026-08",
+    title: "Healthcare Affordability Trifold",
+    campaign: "hc-affordability",
+    type: "one-pager",
+    date: "2026-03",
+    summary:
+      "Developed a State Legislation Tracker, using JS code and Open Legislation v2.0 API data, to help the team and other stakeholders track bills and policies on our agenda.",
+    tags: ["Data visualization", "State legislature"],
+    file: "pdfs/Healthcare Affordability Trifold FINAL.pdf",
+    url: "",
   },
 ];
