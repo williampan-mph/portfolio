@@ -385,6 +385,30 @@ h1.name {
   font-size: 12px;
   color: var(--muted);
 }
+
+/* ----- for bill tracker ----- */
+.bill-tracker-container {
+    margin-left: 0px !important;
+		margin-right: 0px !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+		width: 100% !important;
+    box-sizing: border-box;
+}
+.custom-SbillName {
+  color: #e76f51;
+  text-decoration: none;
+  font-size: 24px;
+	margin-bottom: 0px;
+  display: inline-block;
+}
+.custom-AbillName {
+  color: #58355e;
+  text-decoration: none;
+  font-size: 24px;
+  margin-bottom: 0px;
+  display: inline-block;
+}
  
 /* ---------- Responsive ---------- */
  
