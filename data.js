@@ -148,7 +148,7 @@ const ENTRIES = [
     tags: ["Data visualization", "State legislature"],
     file: [{ path: "pdfs/Healthcare Affordability Trifold FINAL.pdf", label: "Fig. 1 — Enrollment trend" },
     { path: "pdfs/NYC Regional Brief FINAL.pdf", label: "Fig. 2 — Coverage by state" },
-           { path: "pdfs/Statewide Regional Brief FINAL.pdf", label: "Fig. 2 — Coverage by state" }],
+           { path: "pdfs/Statewide Regional Brief FINAL.pdf", label: "Fig. 2 — Coverage by state" },],
     url: "",
   },
 ];
