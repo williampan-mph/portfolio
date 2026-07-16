@@ -228,8 +228,6 @@ function createProgressBar(progressText, type) {
 		width: calc(100% + 36px);
 		position: relative;
 		box-sizing: border-box;
-		margin-left: -18px;
-		margin-top: 10px;
 	`;
 
     stages.forEach((stage, index) => {
