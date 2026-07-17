@@ -50,6 +50,7 @@ const CAMPAIGNS = [
   { id: "nys-marketplace", label: "New York State of Health Marketplace" },
   { id: "aca-changes", label: "Federal Changes to the Affordable Care Act" },
   { id: "hc-affordability", label: "Healthcare Affordability" },
+  { id: "emd", label: "Medical Debt" },
 ];
 
 const ENTRIES = [
@@ -159,8 +160,32 @@ const ENTRIES = [
     date: "2026-01",
     summary:
       "Updating consumers, who receives coverages on the Marketplace, on how cost-sharing reductions are changing due to the State's Transition back to the Basic Health Plan.",
-    tags: ["Published"],
+    tags: ["Policy Writing"],
+    file: "",
+    url: "https://hcfany.org/hcfany-on-governor-hochuls-2026-state-of-the-state-initiatives/",
+  },
+  {
+    id: "2026-10",
+    title: "Campaign Ending Medical Debt in New York",
+    campaign: "emd",
+    type: "link",
+    date: "2026-06",
+    summary:
+      "Summarizing the advocacy and policy work of the campaign describing the policy victories in nearly ending all medical debt in New York",
+    tags: ["Policy Writing"],
     file: "",
     url: "https://hcfany.org/ending-medical-debt/",
+  },
+  {
+    id: "2026-11",
+    title: "Updates to Hospital Financial Assistance Law",
+    campaign: "emd",
+    type: "link",
+    date: "2024-10",
+    summary:
+      "Summarizing policy wins in Hospital Financial Asssitance Law",
+    tags: ["Policy Writing"],
+    file: "",
+    url: "hhttps://hcfany.org/new-yorkers-will-have-an-easier-time-applying-and-finding-affordable-hospital-care/",
   },
 ];
