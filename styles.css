@@ -428,6 +428,14 @@ h1.name {
 
 /* ---------- Footer ---------- */
 
+.custom-SbillName {
+  color: #e76f51;
+}
+
+.custom-AbillName {
+  color: #58355e;
+}
+
 .site-footer {
   border-top: 2px solid var(--ink);
   padding: 24px 0 50px;
