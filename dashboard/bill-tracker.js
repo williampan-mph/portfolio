@@ -348,7 +348,7 @@ function createBillSection(bill) {
     const name = document.createElement("h2");
     name.textContent = bill.name;
     name.style.cssText = `
-        margin-top: -10px;
+        margin-top: -8px;
 		font-weight: 900;
         text-transform: uppercase;
         font-size: 32px;
@@ -361,7 +361,7 @@ function createBillSection(bill) {
     const billInfo = document.createElement("div");
 
 	const summaryHTML = bill.billSummary ? bill.billSummary + "<br>" : "";
-    const noteHTML = bill.note? `<div style="background-color: #fff8e1; border-left: 4px solid #f0a500; padding: 10px 14px; margin-top: 8px; font-size: 14px; border-radius: 4px; color: #5a4000;">
+    const noteHTML = bill.note? `<div style="background-color: #fff8e1; border-left: 4px solid #f0a500; padding: 10px 14px; font-size: 14px; border-radius: 4px; color: #5a4000;">
 			   <strong>📌  </strong> ${bill.note}
 		   </div>`
 		: "";
@@ -375,8 +375,7 @@ function createBillSection(bill) {
 
         button.textContent = showLabel;
         button.style.cssText = `
-            margin-top: -5px;
-            margin-bottom: 10px;
+            margin-top: 5px;
             padding: 6px 12px;
             background-color: #effbff;
             color: #000;
@@ -386,10 +385,9 @@ function createBillSection(bill) {
 
         list.style.cssText = `
             display: none;
-            margin-left: 5px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            font-size: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-size: 12px;
         `;
 
         button.addEventListener("click", () => {
@@ -430,7 +428,7 @@ function createBillSection(bill) {
     // Senate sponsor div
     const senateSponsorDiv = document.createElement("div");
     senateSponsorDiv.style.cssText = `
-        margin: 10px 0 0 0;
+        margin: 15px 0 0 0;
         font-size: 14px;
     `;
     senateSponsorDiv.innerHTML = `
