@@ -98,7 +98,7 @@ const ENTRIES = [
     summary:
       "Develop policy briefs on Congressional District-Level and Statewide-Level Impacts of HR1.",
     tags: ["Affordable Care Act","Policy Briefs"],
-    files: [""],
+    files: "",
     url: "https://hcfany.org/resources/the-impact-of-federal-threats-to-new-yorks-health-care-system-by-district/",
   },
   {
