@@ -59,7 +59,7 @@ const ENTRIES = [
     title: "New York State Bill Tracker",
     campaign: "nys-legislature",
     type: "dashboard",
-    date: "2025-11",
+    date: "2026-5",
     summary:
       "Built a JavaScript-based legislative tracker dashboard using API data that monitors bill status, committee activity, co-sponsorship changes, and legislative actions.",
     tags: ["Data visualization", "State Legislation"],
