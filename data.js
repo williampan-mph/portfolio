@@ -202,7 +202,7 @@ const ENTRIES = [
            { path: "png/FPA/3.png", label: "2" },],
     url: "",
   },
-  id: "2026-13",
+  {id: "2026-13",
     title: "Toolkit promoting Bill to Protect Health Coverage",
     campaign: "aca-changes",
     type: "toolkit",
