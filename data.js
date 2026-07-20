@@ -253,7 +253,7 @@ const ENTRIES = [
     url: "",
   },
     {
-    id: "2026-15",
+    id: "2026-16",
     title: "Proposals on how to mitigate coverage losses form federal changes",
     campaign: "aca-cahnges",
     type: "link",
@@ -263,5 +263,17 @@ const ENTRIES = [
     tags: ["Policy Writing"],
      file: "",
     url: "https://hcfany.org/protecting-health-coverage-for-new-yorkers/",
+  },
+   {
+    id: "2026-17",
+    title: "HCFANY 2026 Legislative Agenda",
+    campaign: "aca-cahnges",
+    type: "onepager",
+    date: "2026-02",
+    summary:
+      "Developed Legislative Agenda for a coalition of 170+ organizations.",
+    tags: ["Policy Writing"],
+     files: [{ path: "pdf/2026-HCFANY-Legislative-Agenda-1.pdf", label: "Open" },],
+    url: "",
   },
 ];
