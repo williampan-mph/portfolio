@@ -202,7 +202,8 @@ const ENTRIES = [
            { path: "png/FPA/3.png", label: "2" },],
     url: "",
   },
-  {id: "2026-13",
+  {
+    id: "2026-13",
     title: "Toolkit promoting Bill to Protect Health Coverage",
     campaign: "aca-changes",
     type: "toolkit",
@@ -214,5 +215,53 @@ const ENTRIES = [
     { path: "png/FT/Brooklyn.png", label: "1" },
            { path: "png/FT/3.Queens", label: "2" },],
     url: "",
+  },
+   {
+    id: "2026-14",
+    title: "Know Your Rights - Medical Debt",
+    campaign: "emd",
+    type: "onepager",
+    date: "2025-07",
+    summary:
+      "Develop Consumer Brief on new Hospital Financial Assistance and Medical Debt policies.",
+    tags: ["Data Visualization","Policy Writing"],
+     files: [{ path: "pdf/Medical-Debts-KYR.pdf", label: "Open" },],
+    url: "",
+  },
+   {
+    id: "2026-15",
+    title: "Health Coverage Eligibility due to Federal Changes",
+    campaign: "aca-cahnges",
+    type: "onepager",
+    date: "2025-07",
+    summary:
+      "Policy Brief informing how federal changes to the ACA will affect certain immigrant groups in New York.",
+    tags: ["Data Visualization","Policy Writing"],
+     files: [{ path: "pdf/4_6-NYS-Immigrant-Health-Coverage.pdf", label: "Open" },],
+    url: "",
+  },
+    {
+    id: "2026-15",
+    title: "Health Coverage Eligibility due to Federal Changes",
+    campaign: "aca-cahnges",
+    type: "onepager",
+    date: "2026-04",
+    summary:
+      "Policy Brief informing how federal changes to the ACA will affect certain immigrant groups in New York.",
+    tags: ["Data Visualization","Policy Writing"],
+     files: [{ path: "pdf/4_6-NYS-Immigrant-Health-Coverage.pdf", label: "Open" },],
+    url: "",
+  },
+    {
+    id: "2026-15",
+    title: "Proposals on how to mitigate coverage losses form federal changes",
+    campaign: "aca-cahnges",
+    type: "link",
+    date: "2026-04",
+    summary:
+      "Page for stakeholders and consumers to understand what they can do to mitigate coverage losses from federal changes to the ACA.",
+    tags: ["Policy Writing"],
+     file: "",
+    url: "https://hcfany.org/protecting-health-coverage-for-new-yorkers/",
   },
 ];
