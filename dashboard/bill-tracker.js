@@ -352,7 +352,7 @@ function createBillSection(bill) {
 		margin-bottom: -8px;
 		font-weight: 900;
         text-transform: uppercase;
-        font-size: 48px;
+        font-size: 32px;
         color: #002d62;
     `;
 
@@ -485,7 +485,7 @@ function createBillSection(bill) {
     `;
     senateLabel.innerHTML = bill.senateBill
         ? `<p><a href="${bill.senateLink}" target="_blank" class="custom-SbillName">${bill.senateBill} (${bill.senateS})</a></p>`
-        : `<p><span style="font-size: 24px;">No Senate Bill Yet</span></p>`;
+        : `<p><span style="font-size: 32px;">No Senate Bill Yet</span></p>`;
 
     // Assembly bill label
     const assemblyLabel = document.createElement("div");
@@ -497,7 +497,7 @@ function createBillSection(bill) {
     `;
     assemblyLabel.innerHTML = bill.assemblyBill
         ? `<p><a href="${bill.assemblyLink}" target="_blank" class="custom-AbillName">${bill.assemblyBill} (${bill.assemblyS})</a></p>`
-        : `<p><span style="font-size: 24px;">No Assembly Bill Yet</span></p>`;
+        : `<p><span style="font-size: 32px;">No Assembly Bill Yet</span></p>`;
 
     // Append
     section.appendChild(name);
