@@ -85,7 +85,7 @@ const ENTRIES = [
     type: "link",
     date: "2026-05",
     summary:
-      "Updating consumers on how cost-sharing reductions are changing due to the State's Transition back to the Basic Health Plan.",
+      "Updated consumers on how cost-sharing reductions are changing due to the State's transition back to the Basic Health Plan.",
     tags: ["State Marketplace","Affordable Care Act"],
     file: "",
     url: "https://hcfany.org/free-insulin-program-in-new-york-remains-amidst-state-transition-back-to-the-basic-health-plan/",
@@ -97,7 +97,7 @@ const ENTRIES = [
     type: "onepager",
     date: "2025-01",
     summary:
-      "Policy briefs on Congressional District-Level and Statewide-Level Impacts of HR1 on New York.",
+      "Policy briefs on Congressional District-Level and Statewide-Level Impacts of federal changes to the ACA in New York.",
     tags: ["Affordable Care Act","Policy Briefs"],
     files: "",
     url: "https://hcfany.org/resources/the-impact-of-federal-threats-to-new-yorks-health-care-system-by-district/",
@@ -109,7 +109,7 @@ const ENTRIES = [
     type: "dashboard",
     date: "2025-01",
     summary:
-      "Developed a data dashboard, using external data, to inform policymakers and consumers on how federal cuts to the ACA affects New Yorkers by County and Congressional District.",
+      "Developed a data dashboard, using external data, to inform policymakers and consumers on how federal cuts to the ACA affects New Yorkers by Congressional District.",
     tags: ["Dashboard", "Published"],
     file: "dashboard/ft-index.html",
     url: "https://hcfany.org/federal-threats-to-health-coverage/",
@@ -121,7 +121,7 @@ const ENTRIES = [
     type: "dashboard",
     date: "2026-06",
     summary:
-      "Developed a dashbaord on the prior approval process of health plans on the Marketplace.",
+      "Built a dashbaord on the prior approval process of health plans on the Marketplace and their approved rates by the Department of Financial Services.",
     tags: ["Data visualization", "State Marketplace"],
     file: "dashboard/rr-index.html",
     url: "https://hcfany.org/rate-review/",
@@ -140,12 +140,12 @@ const ENTRIES = [
   },
    {
     id: "2026-08",
-    title: "Healthcare Affordability Trifold",
+    title: "Healthcare Affordability Trifold and Policy Briefs",
     campaign: "hc-affordability",
     type: "onepager",
     date: "2025-10",
     summary:
-      "Led an exhibit on the organization's analysis on health care affordability in New York and developed all materials needed.",
+      "Led an exhibit on the organization's analysis on health care affordability in New York and developed all hand-out materials.",
     tags: ["Policy Writing"],
     files: [{ path: "pdfs/Healthcare Affordability Trifold FINAL.pdf", label: "Trifold" },
     { path: "pdfs/NYC Regional Brief FINAL.pdf", label: "NYC Policy Brief" },
@@ -171,7 +171,7 @@ const ENTRIES = [
     type: "link",
     date: "2026-05",
     summary:
-      "Summarizing the advocacy and policy work of the campaign describing the policy victories in nearly ending all medical debt in New York",
+      "Summarizing the advocacy and policy work of the campaign describing the policy victories that lead to the elimination of nearly all medical debt lawsuits.",
     tags: ["Policy Writing"],
     file: "",
     url: "https://hcfany.org/ending-medical-debt/",
@@ -195,7 +195,7 @@ const ENTRIES = [
     type: "toolkit",
     date: "2026-01",
     summary:
-      "Figure Depicting how the Fair Pricing Act would benefit New Yorkers.",
+      "Figure depicting how the Fair Pricing Act would benefit New Yorkers.",
     tags: ["Data Visualization"],
      files: [{ path: "png/FPA/1.png", label: "Cover" },
     { path: "png/FPA/2.png", label: "1" },
@@ -209,7 +209,7 @@ const ENTRIES = [
     type: "toolkit",
     date: "2026-03",
     summary:
-      "Utilizing data to develop a toolkit for coalition members to push S9589/A10926.",
+      "Utilizing data to develop a social mmedia toolkit for coalition members to push S9589/A10926.",
     tags: ["Data Visualization"],
      files: [{ path: "png/FT/Cover.png", label: "Cover" },
     { path: "png/FT/Brooklyn.png", label: "1" },
@@ -223,7 +223,7 @@ const ENTRIES = [
     type: "onepager",
     date: "2025-07",
     summary:
-      "Develop Consumer Brief on new Hospital Financial Assistance and Medical Debt policies.",
+      "Developed consumer brief on new Hospital Financial Assistance and Medical Debt policies.",
     tags: ["Data Visualization","Policy Writing"],
      files: [{ path: "pdf/Medical-Debts-KYR.pdf", label: "Open" },],
     url: "",
@@ -235,19 +235,7 @@ const ENTRIES = [
     type: "onepager",
     date: "2025-07",
     summary:
-      "Policy Brief informing how federal changes to the ACA will affect certain immigrant groups in New York.",
-    tags: ["Data Visualization","Policy Writing"],
-     files: [{ path: "pdf/4_6-NYS-Immigrant-Health-Coverage.pdf", label: "Open" },],
-    url: "",
-  },
-    {
-    id: "2026-15",
-    title: "Health Coverage Eligibility due to Federal Changes",
-    campaign: "aca-cahnges",
-    type: "onepager",
-    date: "2026-04",
-    summary:
-      "Policy Brief informing how federal changes to the ACA will affect certain immigrant groups in New York.",
+      "Policy brief informing how federal changes to the ACA will affect coverage for certain immigrant groups in New York.",
     tags: ["Data Visualization","Policy Writing"],
      files: [{ path: "pdf/4_6-NYS-Immigrant-Health-Coverage.pdf", label: "Open" },],
     url: "",
