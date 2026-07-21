@@ -60,6 +60,27 @@ a { color: inherit; }
   color: var(--muted);
   text-transform: uppercase;
   padding-top: 8px;
+  white-space: nowrap;
+}
+
+.masthead-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.profile-photo {
+  width: 116px;
+  height: 116px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+  background: var(--panel);
+  flex-shrink: 0;
+}
+
+.masthead-text {
+  min-width: 0;
 }
 
 h1.name {
@@ -101,6 +122,33 @@ h1.name {
   background: var(--paper);
   padding: 18px 0;
   border-bottom: 1px solid var(--rule);
+}
+
+.filter-toggle-btn {
+  display: none; /* only shown on mobile, see media query */
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 10px 14px;
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.filter-toggle-chevron {
+  transition: transform 0.15s;
+  font-size: 14px;
+}
+
+.filter-toggle-btn[aria-expanded="true"] .filter-toggle-chevron {
+  transform: rotate(180deg);
 }
 
 .filter-label {
@@ -295,7 +343,7 @@ h1.name {
 
 .dashboard-preview-wrap iframe {
   width: 100%;
-  height: 420px;
+  height: 340px;
   border: 0;
   display: block;
 }
@@ -427,14 +475,6 @@ h1.name {
 
 /* ---------- Footer ---------- */
 
-.custom-SbillName {
-  color: #e76f51;
-}
-
-.custom-AbillName {
-  color: #58355e;
-}
-
 .site-footer {
   border-top: 2px solid var(--ink);
   padding: 24px 0 50px;
@@ -445,8 +485,79 @@ h1.name {
 
 /* ---------- Responsive ---------- */
 
-@media (max-width: 560px) {
+@media (max-width: 640px) {
   .site-header { padding-top: 40px; }
+
+  /* Header: stack photo above text and center it */
+  .masthead-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .profile-photo {
+    width: 96px;
+    height: 96px;
+  }
+
+  .contact-row {
+    justify-content: center;
+  }
+
+  .masthead {
+    flex-direction: column;
+  }
+
+  .masthead-id {
+    padding-top: 0;
+  }
+
+  /* Filters: hidden by default, revealed by the toggle button */
+  .filter-toggle-btn {
+    display: flex;
+  }
+
+  .filter-row {
+    display: none;
+    margin-top: 14px;
+  }
+
+  .filter-row.open {
+    display: flex;
+  }
+
+  /* Let each filter's chip row scroll horizontally instead of wrapping
+     into a tall block, once the panel is open */
+  .filter-chips {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .chip {
+    flex-shrink: 0;
+  }
+
+  /* Compact preview grids on narrow screens */
+  .file-thumb-gallery,
+  .pdf-preview-grid {
+    gap: 10px;
+  }
+
+  .file-thumb,
+  .pdf-preview-card {
+    width: calc(50% - 5px);
+  }
+
+  .file-thumb img {
+    width: 100%;
+  }
+
+  .dashboard-preview-wrap iframe {
+    height: 240px;
+  }
 }
 
 /* Focus visibility */
@@ -456,4 +567,3 @@ a:focus-visible,
   outline: 2px solid var(--teal);
   outline-offset: 2px;
 }
- 
