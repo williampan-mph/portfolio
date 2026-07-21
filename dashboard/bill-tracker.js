@@ -349,9 +349,10 @@ function createBillSection(bill) {
     name.textContent = bill.name;
     name.style.cssText = `
         margin-top: -8px;
+		margin-bottom: -8px;
 		font-weight: 900;
         text-transform: uppercase;
-        font-size: 32px;
+        font-size: 48px;
         color: #002d62;
     `;
 
