@@ -6,7 +6,7 @@
 const TYPE_LABELS = {
   dashboard: "Dashboard",
   toolkit: "Toolkit",
-  graph: "Graph/Figure",
+  graph: "Publications",
   onepager: "Policy Briefs",
   link: "Policy Writing",
 };
