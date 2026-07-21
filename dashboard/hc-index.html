@@ -3,10 +3,16 @@
   <button class="tab-btn" onclick="openTab(event, 'tab2')">Medical Debt Map</button>
 </div>
 
-<div id="tab1" class="tab-content" style="display: block;">
-  <iframe src="https://www.arcgis.com/apps/dashboards/3e05b4524b3a4381a3a741a62a81743c"></iframe>
+<div id="tab1" class="tab-content active-panel">
+  <div class="dashboard-frame">
+    <iframe src="https://www.arcgis.com/apps/dashboards/3e05b4524b3a4381a3a741a62a81743c"
+            title="Health Care Affordability Dashboard" loading="lazy"></iframe>
+  </div>
 </div>
 
 <div id="tab2" class="tab-content">
-  <iframe src="https://www.arcgis.com/apps/dashboards/05962169834648beb2d70a5070641154"></iframe>
+  <div class="dashboard-frame">
+    <iframe src="https://www.arcgis.com/apps/dashboards/05962169834648beb2d70a5070641154"
+            title="Medical Debt Map" loading="lazy"></iframe>
+  </div>
 </div>
