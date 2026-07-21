@@ -225,7 +225,7 @@ const ENTRIES = [
     summary:
       "Developed consumer brief on new Hospital Financial Assistance and Medical Debt policies.",
     tags: ["Data Visualization","Policy Writing"],
-     files: [{ path: "pdf/Medical-Debts-KYR.pdf", label: "Open" },],
+     files: [{ path: "pdfs/Medical-Debts-KYR.pdf", label: "Open" },],
     url: "",
   },
    {
@@ -237,7 +237,7 @@ const ENTRIES = [
     summary:
       "Policy brief informing how federal changes to the ACA will affect coverage for certain immigrant groups in New York.",
     tags: ["Data Visualization","Policy Writing"],
-     files: [{ path: "pdf/4_6-NYS-Immigrant-Health-Coverage.pdf", label: "Open" },],
+     files: [{ path: "pdfs/4_6-NYS-Immigrant-Health-Coverage.pdf", label: "Open" },],
     url: "",
   },
     {
@@ -261,7 +261,7 @@ const ENTRIES = [
     summary:
       "Developed Legislative Agenda for a coalition of 170+ organizations.",
     tags: ["Policy Writing"],
-     files: [{ path: "pdf/2026-HCFANY-Legislative-Agenda-1.pdf", label: "Open" },],
+     files: [{ path: "pdfs/2026-HCFANY-Legislative-Agenda-1.pdf", label: "Open" },],
     url: "",
   },
 ];
