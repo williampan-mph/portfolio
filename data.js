@@ -209,7 +209,7 @@ const ENTRIES = [
     type: "toolkit",
     date: "2026-03",
     summary:
-      "Utilizing data to develop a social mmedia toolkit for coalition members to push S9589/A10926.",
+      "Utilizing data to develop a social mmedia toolkit for coalition members to push S9589/A10926, 2 exmaple counties shown.",
     tags: ["Data Visualization"],
      files: [{ path: "png/FT/Cover.png", label: "Cover" },
     { path: "png/FT/Erie.png", label: "1" },
@@ -231,7 +231,7 @@ const ENTRIES = [
    {
     id: "2026-15",
     title: "Health Coverage Eligibility due to Federal Changes",
-    campaign: "aca-cahnges",
+    campaign: "aca-changes",
     type: "onepager",
     date: "2025-07",
     summary:
@@ -243,7 +243,7 @@ const ENTRIES = [
     {
     id: "2026-16",
     title: "Proposals on how to mitigate coverage losses form federal changes",
-    campaign: "aca-cahnges",
+    campaign: "aca-changes",
     type: "link",
     date: "2026-04",
     summary:
@@ -255,13 +255,73 @@ const ENTRIES = [
    {
     id: "2026-17",
     title: "HCFANY 2026 Legislative Agenda",
-    campaign: "aca-cahnges",
+    campaign: "aca-changes",
     type: "onepager",
     date: "2026-02",
     summary:
       "Developed Legislative Agenda for a coalition of 170+ organizations.",
     tags: ["Policy Writing"],
      files: [{ path: "pdfs/2026-HCFANY-Legislative-Agenda-1.pdf", label: "Open" },],
+    url: "",
+  },
+    {
+    id: "2026-18",
+    title: "CSSNY Polices to Mitigate Coverage Losses from federal changes to the ACA",
+    campaign: "aca-changes",
+    type: "graph",
+    date: "2026-03",
+    summary:
+      "Contributed to:",
+    tags: ["Policy Writing"],
+     files: [{ path: "pdfs/CSSNY_Preserving_Health_Coverage_March_2026.pdf", label: "Open" },],
+    url: "",
+  },
+   {
+    id: "2026-19",
+    title: "CSSNY Campaign to End Medical Debt",
+    campaign: "emd",
+    type: "graph",
+    date: "2025-10",
+    summary:
+      "Contributed to and developed data visualizations for:",
+    tags: ["Policy Writing","Data Visualization"],
+     files: [{ path: "pdfs/100825_EMD_Campaign_Report_V81.pdf", label: "Open" },],
+    url: "",
+  },
+  {
+    id: "2026-20",
+    title: "CSSNY How the Fair Pricing Act’s Site Neutral Policy Boosts Health Care Affordability by Ensuring Savings Will Be Passed Through to Patients and Payers",
+    campaign: "hc-affordability",
+    type: "graph",
+    date: "2026-01",
+    summary:
+      "Contributed to and developed data visualizations for:",
+    tags: ["Policy Writing","Data Visualization"],
+     files: [{ path: "pdfs/Fair_Pricing_Act_Brief.pdf", label: "Open" },],
+    url: "",
+  },
+  {
+    id: "2026-21",
+    title: "CSSNY Why is Health Care in New York So Unaffordable and What Can be Done to Fix It?",
+    campaign: "hc-affordability",
+    type: "graph",
+    date: "2025-02",
+    summary:
+      "Contributed to and developed data visualizations for:",
+    tags: ["Policy Writing","Data Visualization"],
+     files: [{ path: "pdfs/NYS_Health_Care_Affordability_February_2025", label: "Open" },],
+    url: "",
+  },
+  {
+    id: "2026-21",
+    title: "Policy Brief (S1804A/A128A, NYS 2025)",
+    campaign: "nys-legislature",
+    type: "onepager",
+    date: "2025-09",
+    summary:
+      "Created a policy brief on a bill to eliminate co-pays for inhalers (S1804A/A128A).",
+    tags: ["Policy Brief","Data Visualization"],
+     files: [{ path: "png/Asthma/AsthmaBrief.png", label: "Open" },],
     url: "",
   },
 ];
