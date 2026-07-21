@@ -60,7 +60,6 @@ a { color: inherit; }
   color: var(--muted);
   text-transform: uppercase;
   padding-top: 8px;
-  white-space: nowrap;
 }
 
 h1.name {
