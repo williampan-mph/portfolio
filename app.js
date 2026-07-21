@@ -8,7 +8,7 @@ const TYPE_LABELS = {
   toolkit: "Toolkit",
   graph: "Graph/Figure",
   onepager: "One-pager",
-  link: "Website",
+  link: "Policy Writing",
 };
 
 const TYPE_ICONS = {
