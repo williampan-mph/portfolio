@@ -309,7 +309,7 @@ const ENTRIES = [
     summary:
       "Contributed to and developed data visualizations for:",
     tags: ["Policy Writing","Data Visualization"],
-     files: [{ path: "pdfs/NYS_Health_Care_Affordability_February_2025", label: "Open" },],
+     files: [{ path: "pdfs/NYS_Health_Care_Affordability_February_2025.pdf", label: "Open" },],
     url: "",
   },
   {
