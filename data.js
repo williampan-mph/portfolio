@@ -212,8 +212,8 @@ const ENTRIES = [
       "Utilizing data to develop a social mmedia toolkit for coalition members to push S9589/A10926.",
     tags: ["Data Visualization"],
      files: [{ path: "png/FT/Cover.png", label: "Cover" },
-    { path: "png/FT/Brooklyn.png", label: "1" },
-           { path: "png/FT/3.Queens", label: "2" },],
+    { path: "png/FT/Erie.png", label: "1" },
+           { path: "png/FT/Queens.png", label: "2" },],
     url: "",
   },
    {
